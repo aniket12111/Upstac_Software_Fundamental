@@ -66,14 +66,8 @@ class RestaurantServiceTest {
     }
     //<<<<<<<<<<<<<<<<<<<<ADMIN: ADDING & REMOVING RESTAURANTS>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    @Test
-    public void validating_order_value() {
-        List<String> myList = new ArrayList<>();
-        myList.add("Sweet corn soup");
-        Restaurant res = service.findRestaurantByName("Amelie");
-        assertEquals(110,service.getOrderValue(res.getName(), myList));
-    }
-    /*
+
+
     @Test
     public void validating_order_value() throws restaurantNotFoundException {
         List<String> myList = new ArrayList<>();
@@ -88,5 +82,5 @@ class RestaurantServiceTest {
         myList.add("Sweet corn soup");
         Restaurant res = service.findRestaurantByName("Amelie");
         assertEquals(119,service.getOrderValue(res.getName(), myList));
-    }*/
+    }
 }
